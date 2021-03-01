@@ -3,12 +3,13 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 
 
 
-function ImageDetails(props) {
+function ImageDetails({ imageSource, title, score }) {
     
     return (
         <View>
-            <Image source={this.props.src} />
-            <Text>{props.title}</Text>
+            <Image source={imageSource} />
+            <Text>{title}</Text>
+            <Text>Image Score - {score}</Text>
         </View>
     );
 }
